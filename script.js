@@ -1,24 +1,4 @@
-<?php
-echo "Salom";
-?>
-<!DOCTYPE html>
-<html lang="uz">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foydalanuvchi qo'shish</title>
-    <link rel="stylesheet" href="style.css"> 
-  </head>
-  <body>
-    <h1>Foydalanuvchi qo'shish!</h1>
-    <form id="userForm">
-      <input type="text" id="nameInput" placeholder="Ismingizni" required>
-      <input type="email" id="emailInput" placeholder="Email" required>
-    <button type="submit">Qo'shish</button>
-    </form>
-    <div id="natija"></div>
-    <script>
-      const forma = document.querySelector("#userForm");
+const forma = document.querySelector("#userForm");
 const nameInput = document.querySelector("#nameInput");
 const emailInput = document.querySelector("#emailInput");
 const natija = document.querySelector("#natija");
@@ -56,6 +36,3 @@ forma.addEventListener("submit", async (event) => {
     natija.style.color = "red";
   }
 });
-    </script>
-  </body>
-</html>
